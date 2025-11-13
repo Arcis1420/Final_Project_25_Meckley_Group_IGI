@@ -48,7 +48,5 @@ public class EnemySteeringAI : MonoBehaviour
         desiredVelocity.y = rb.velocity.y; // keep gravity
 
         rb.velocity = desiredVelocity;
-
-        // 🚫 Removed rotation code so enemy doesn’t turn
     }
 }

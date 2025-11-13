@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 281670748}
   - component: {fileID: 281670747}
   - component: {fileID: 281670749}
-  - component: {fileID: 281670750}
+  - component: {fileID: 281670751}
   m_Layer: 0
   m_Name: MC_Packed_FP-2025-1_2
   m_TagString: Untagged
@@ -420,7 +420,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &281670750
+--- !u!114 &281670751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -429,9 +429,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 281670744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d656e383afd3d4eaacbbbb7efc5cc5, type: 3}
+  m_Script: {fileID: 11500000, guid: e56257dea81dcf9419e2db869e44a417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 281670749}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,7 +1557,7 @@ PrefabInstance:
     - target: {fileID: 8120336479193413396, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.34
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 8120336479193413396, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
