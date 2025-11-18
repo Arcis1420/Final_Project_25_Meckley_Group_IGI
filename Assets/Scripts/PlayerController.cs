@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public float groundDist;
+    public Animator animator;
+
 
     public LayerMask terrainLayer;
     public Rigidbody rb;
@@ -19,8 +21,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
         RaycastHit hit;
         Vector3 castPos = transform.position;
         castPos.y += 1;
@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
         }
 
         float x = Input.GetAxis("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(x));
+
         float y = Input.GetAxis("Vertical");
         Vector3 moveDir = new Vector3(x, 0, y);
         rb.velocity = moveDir * speed;
@@ -47,7 +50,5 @@ public class PlayerController : MonoBehaviour
         {  
             sr.flipX = false;
         }
-
-
     }
 }
