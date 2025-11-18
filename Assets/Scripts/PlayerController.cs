@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public float groundDist;
+    public float up;
     public Animator animator;
 
 
@@ -35,20 +36,40 @@ public class PlayerController : MonoBehaviour
         }
 
         float x = Input.GetAxis("Horizontal");
-
-        animator.SetFloat("Speed", Mathf.Abs(x));
-
         float y = Input.GetAxis("Vertical");
+        //animator.SetFloat("Speed", Mathf.Abs(x));
+        //animator.SetFloat("up", (y));
+
+
+
+
         Vector3 moveDir = new Vector3(x, 0, y);
         rb.velocity = moveDir * speed;
+
 
         if (x != 0 && x < 0)
         {
             sr.flipX = true;
+            animator.SetFloat("Speed", Mathf.Abs(x));
         }
         else if (x != 0 && x > 0)
         {  
             sr.flipX = false;
+            animator.SetFloat("Speed", Mathf.Abs(x));
         }
+        else if (y != 0 && y < 0)
+        {
+            animator.SetFloat("down", Mathf.Abs(y));
+        }
+        else if (y != 0 && y > 0)
+        {
+            animator.SetFloat("up", (y));
+        }
+
+
+
+
+
+
     }
 }
