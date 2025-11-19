@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 206668721567303349}
   - component: {fileID: 6732035722080140246}
   - component: {fileID: 3899670409071087691}
-  m_Layer: 0
-  m_Name: Capsule
+  m_Layer: 7
+  m_Name: choom_shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 1112183756392047952}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.075, z: 0}
-  m_LocalScale: {x: 0.28652903, y: 0.25261548, z: 0.19844106}
+  m_LocalPosition: {x: 0, y: 0.034, z: 0}
+  m_LocalScale: {x: 0.28652903, y: 0.21273255, z: 0.19844106}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 602917673104134285}
@@ -121,7 +121,8 @@ GameObject:
   - component: {fileID: 1409880290790153918}
   - component: {fileID: 7529521285946204634}
   - component: {fileID: 4215514121869438991}
-  m_Layer: 0
+  - component: {fileID: 382592769686288370}
+  m_Layer: 7
   m_Name: NPC_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +138,7 @@ Transform:
   m_GameObject: {fileID: 6192415337139237945}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.34, y: 0.257, z: 1.473}
+  m_LocalPosition: {x: 1.47, y: 0.257, z: 1.473}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -214,7 +215,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6192415337139237945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
   m_Name: 
@@ -236,9 +237,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  moveSpeed: 1.5
+  moveSpeed: 1
   chaseDistance: 10
   stopChaseDistance: 14
+--- !u!114 &382592769686288370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6192415337139237945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60ca7573c94b13e40a422c97aef5bed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 6891355470423300360}
+  maxHealth: 100
 --- !u!1 &9016654578298903653
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,8 +266,7 @@ GameObject:
   - component: {fileID: 1711876686278700207}
   - component: {fileID: 6891355470423300360}
   - component: {fileID: 5379772133868968174}
-  - component: {fileID: 7219550118638876098}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Choomba_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,19 +376,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &7219550118638876098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9016654578298903653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
     _objectReferences: []
