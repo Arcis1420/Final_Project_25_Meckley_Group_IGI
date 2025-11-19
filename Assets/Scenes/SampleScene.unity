@@ -435,10 +435,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 281670749}
   attackPoint: {fileID: 538003571}
-  attackRange: 0.46
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+  attackRange: 0.46
+  attackDamage: 40
 --- !u!114 &281670752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1661,10 +1662,15 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7529521285946204634, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8120336479193413396, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.382
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 8120336479193413396, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
@@ -1716,7 +1722,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7219550118638876098, guid: 43bfd4aecdb505148b8f8ac3c18163e3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
