@@ -43,11 +43,13 @@ public class MC_Combat : MonoBehaviour
 
         foreach (Collider enemy in hitEnemies)
         {
-
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
-            
-
+            Enemy e = enemy.GetComponentInParent<Enemy>();
+            if (e != null)
+            {
+                e.TakeDamage(attackDamage);
+            }
         }
+
 
     }
     void OnDrawGizmosSelected()
