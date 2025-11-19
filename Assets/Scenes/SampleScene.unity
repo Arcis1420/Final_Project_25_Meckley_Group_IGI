@@ -513,6 +513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ebdbd7c13298241876833ad0b4161d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NPC_1: {fileID: 391547490}
+  spawnDelay: 2
+  maxSpawns: 5
 --- !u!4 &317844469
 Transform:
   m_ObjectHideFlags: 0
@@ -700,6 +703,12 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &391547490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192415337139237945, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1397468079}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &408948726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1309,7 +1318,7 @@ PrefabInstance:
     - target: {fileID: 1112183756392047952, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6192415337139237945, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
@@ -1319,7 +1328,7 @@ PrefabInstance:
     - target: {fileID: 6192415337139237945, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8120336479193413396, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
@@ -1374,7 +1383,7 @@ PrefabInstance:
     - target: {fileID: 9016654578298903653, guid: 43bfd4aecdb505148b8f8ac3c18163e3,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
