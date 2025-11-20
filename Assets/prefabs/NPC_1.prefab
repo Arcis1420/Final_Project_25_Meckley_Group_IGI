@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6891355470423300360}
-  maxHealth: 100
+  maxHealth: 99
 --- !u!1 &9016654578298903653
 GameObject:
   m_ObjectHideFlags: 0

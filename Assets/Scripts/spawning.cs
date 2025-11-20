@@ -24,7 +24,7 @@ public class spawning : MonoBehaviour
         if (timer >= spawnDelay)
         {
             float x = Random.Range(0f, 6f);
-            float y = Random.Range(0f, 6f);
+            float y = Random.Range(0f, 4f);
             Vector3 spawnPos = new Vector3(x, 0, y);
 
             Instantiate(NPC_1, spawnPos, Quaternion.identity);

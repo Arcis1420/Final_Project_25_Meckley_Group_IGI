@@ -3,7 +3,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Animator animator;        // assign the CHILD animator in inspector
-    public int maxHealth = 100;
+    public int maxHealth = 99;
     private int currentHealth;
 
     private Rigidbody rb;
