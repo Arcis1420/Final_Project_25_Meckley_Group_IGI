@@ -48,7 +48,7 @@ public class MC_Combat : MonoBehaviour
 
        Collider [] hitEnemies = Physics.OverlapSphere(attackPoint.position, attackRange, enemyLayers);
 
-
+         
         //damage them
 
         foreach (Collider enemy in hitEnemies)
@@ -58,7 +58,22 @@ public class MC_Combat : MonoBehaviour
             {
                 e.TakeDamage(attackDamage);
             }
-        }
+
+
+
+            // 3. Detect foliage (NO LAYER FILTER SO ANYTHING CAN BE CHECKED)
+            Collider[] hitFoliage = Physics.OverlapSphere(attackPoint.position, attackRange);
+
+            // 4. Break foliage objects
+            foreach (Collider f in hitFoliage)
+            {
+                BreakableObject b = f.GetComponentInParent<BreakableObject>();
+                if (b != null)
+                    b.TakeHit();
+            }
+        
+
+    }
 
 
 
@@ -74,6 +89,9 @@ public class MC_Combat : MonoBehaviour
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
+
+
+
 }
 
 
