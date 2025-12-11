@@ -668,7 +668,7 @@ MonoBehaviour:
   maxHearts: 5
   currentHearts: 0
   animator: {fileID: 0}
-  heartsUI: {fileID: 0}
+  heartsUI: {fileID: 1769548635}
 --- !u!1 &317844467
 GameObject:
   m_ObjectHideFlags: 0
