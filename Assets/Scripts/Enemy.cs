@@ -38,6 +38,21 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy died");
 
+        //Notify Wall
+        WallBreakR1 wall = FindObjectOfType<WallBreakR1>();
+        if (wall != null)
+        {
+            wall.EnemyKilled();
+        }
+
+        //Notify Wall2
+        WallBreak2R1 wall2 = FindObjectOfType<WallBreak2R1>();
+        if (wall2 != null)
+        {
+            wall2.EnemyKilled();
+        }
+
+
         // 1. Stop all movement
         if (ai != null) ai.enabled = false;
         if (rb != null) rb.velocity = Vector3.zero;
